@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ — Ẩm Thực Miền Tây</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────── -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">Â</div>
+        <div class="logo-text">
+          Ẩm Thực Miền Tây
+          <span>Nam Bộ · Việt Nam</span>
+        </div>
+      </a>
+      <input type="checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">&#9776;</label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="about.html">Đồng Bằng Ẩm Thực</a></li>
+          <li><a href="products.html">Đặc Sản</a></li>
+          <li><a href="contact.html" class="active">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── PAGE HERO ────────────────────────────── -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span>Liên hệ</span></div>
+      <h1>Liên Hệ Với Chúng Tôi</h1>
+      <p>Có câu hỏi về ẩm thực khám phá miền Tây? Chúng tôi luôn sẵn sàng hỗ trợ bạn!</p>
+    </div>
+  </div>
+
+  <!-- ── FORM + INFO ───────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Thông tin liên hệ -->
+        <div class="contact-info">
+          <div class="section-label"><span>Thông tin</span></div>
+          <h2>Hãy kết nối với chúng tôi</h2>
+          <p>
+            Dù bạn muốn tìm hiểu thêm về ẩm thực miền Tây, đặt tour khám phá hay hợp tác quảng bá du lịch —
+            đừng ngại liên hệ, chúng tôi luôn ở đây để hỗ trợ.
+          </p>
+
+          <div style="margin-top:1.5rem;">
+
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Địa chỉ</strong>
+                <span>Trần Văn Thời, TP. Cà Mau<br />Cà Mau, Việt Nam</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div>
+                <strong>Điện thoại</strong>
+                <span>0913 383 619</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                  <span>duongquochy2019@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🕐</span>
+              <div>
+                <strong>Giờ làm việc</strong>
+                <span>Thứ Hai – Thứ Sáu: 8:00 – 17:30<br />Thứ Bảy: 8:00 – 12:00</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Ảnh minh họa -->
+          <div style="margin-top:1.75rem; border-radius:var(--radius); overflow:hidden; height:180px;">
+            <img
+              src="image/image038.jpg?w=500&h=240&fit=crop&auto=format"
+              alt="Sông nước miền Tây"
+              style="width:100%; height:100%; object-fit:cover;"
+            />
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-card">
+          <h3>Gửi Tin Nhắn</h3>
+          <form action="#" method="post">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Họ và tên *</label>
+                <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="0901 234 567" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Chủ đề</label>
+              <select id="subject" name="subject">
+                <option value="">-- Chọn chủ đề --</option>
+                <option value="tour">Đặt tour khám phá miền Tây</option>
+                <option value="food">Hỏi về món ăn đặc sản</option>
+                <option value="collab">Hợp tác quảng bá du lịch</option>
+                <option value="other">Chủ đề khác</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nội dung tin nhắn *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Nhập nội dung bạn muốn hỏi hoặc chia sẻ..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-red" style="width:100%; justify-content:center; font-size:.95rem; padding:.8rem 1rem;">
+              Gửi tin nhắn &#8594;
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CÂU HỎI THƯỜNG GẶP ───────────────────── -->
+  <section class="bg-sand">
+    <div class="container">
+      <div class="section-head" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;"><span>FAQ</span></div>
+        <h2>Câu Hỏi Thường Gặp</h2>
+      </div>
+
+      <div class="grid-2" style="gap:1.25rem; align-items:start;">
+
+        <div class="card" style="padding:1.25rem 1.5rem;">
+          <h3 style="margin-bottom:.5rem; font-size:1rem;">🍜 Có thể đặt tour ẩm thực miền Tây không?</h3>
+          <p style="font-size:.85rem;">Có! Chúng tôi có tour ẩm thực 1 ngày và nhiều ngày, tham quan chợ nổi và trải nghiệm nấu ăn cùng người dân địa phương.</p>
+        </div>
+
+        <div class="card" style="padding:1.25rem 1.5rem;">
+          <h3 style="margin-bottom:.5rem; font-size:1rem;">🗺️ Thời điểm nào đẹp nhất để đến miền Tây?</h3>
+          <p style="font-size:.85rem;">Mùa khô (tháng 12 – tháng 4) là thời điểm lý tưởng nhất. Thời tiết mát mẻ, đường thuận tiện và lễ hội rộn ràng.</p>
+        </div>
+
+        <div class="card" style="padding:1.25rem 1.5rem;">
+          <h3 style="margin-bottom:.5rem; font-size:1rem;">💰 Chi phí tour ẩm thực khoảng bao nhiêu?</h3>
+          <p style="font-size:.85rem;">Tour 1 ngày từ 300.000 – 600.000 đồng/người. Tour nhiều ngày có nhiều gói linh hoạt, phù hợp nhóm gia đình và doanh nghiệp.</p>
+        </div>
+
+        <div class="card" style="padding:1.25rem 1.5rem;">
+          <h3 style="margin-bottom:.5rem; font-size:1rem;">🎒 Cần chuẩn bị gì khi đi miền Tây?</h3>
+          <p style="font-size:.85rem;">Quần áo thoáng mát, giày dép dễ đi, kem chống nắng và tinh thần sẵn sàng thử món ngon! Chúng tôi sẽ lo phần còn lại.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">Â</div>
+            <div class="logo-text" style="color:#fff;">
+              Ẩm Thực Miền Tây
+              <span style="color:rgba(255,255,255,.5);">Nam Bộ · Việt Nam</span>
+            </div>
+          </a>
+          <p>Cổng thông tin du lịch và ẩm thực miền Tây Nam Bộ.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Khám Phá</h4>
+          <ul>
+            <li><a href="products.html">20 Món đặc sản</a></li>
+            <li><a href="products.html">Các loại bánh</a></li>
+            <li><a href="about.html">Giới thiệu vùng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div><strong>Địa chỉ</strong><span>Trần Văn Thời, TP. Cà Mau</span></div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📧</span>
+            <div><strong>Email</strong><span>duongquochy2019@gmail.com</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ẩm Thực Miền Tây.</span>
+        <span>Thiết kế với <span class="heart">♥</span> Dương Quốc Hy</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>20 Món Đặc Sản — Ẩm Thực Miền Tây</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Overrides cho trang products */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .products-grid .card-img { height: 150px; }
+
+    @media (max-width: 900px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 400px) { .products-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────── -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">Â</div>
+        <div class="logo-text">
+          Ẩm Thực Miền Tây
+          <span>Nam Bộ · Việt Nam</span>
+        </div>
+      </a>
+      <input type="checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">&#9776;</label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="about.html">Đồng Bằng Ẩm Thực</a></li>
+          <li><a href="products.html" class="active">Đặc Sản</a></li>
+          <li><a href="contact.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── PAGE HERO ────────────────────────────── -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span>Tinh hoa ẩm thực</span></div>
+      <h1>Top 20 món nổi bật của vùng sông nước Miền Tây</h1>
+      <p>Đây là hai mươi món ăn nổi bật được chắt lọc từ hàng trăm đặc sản — mỗi món là hành trình khám phá hương vị riêng biệt của vùng sông nước đồng bằng.</p>
+    </div>
+  </div>
+
+  <!-- ── 20 MÓN ĂN CHÍNH ──────────────────────── -->
+  <section class="bg-dark">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label"><span>20 Món Chính</span></div>
+        <h2>Tinh Hoa Đồng Bằng</h2>
+        <p>Danh sách 20 món ăn đặc sắc nhất của miền Tây Nam Bộ — được yêu thích và nổi tiếng khắp cả nước.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- 1 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image004.jpg?w=320&h=200&fit=crop&auto=format" alt="Lẩu mắm" />
+            <span class="card-badge">#01</span>
+            <span class="card-tag">Đặc sản</span>
+          </div>
+          <div class="card-body">
+            <h3>Lẩu Mắm</h3>
+            <p>Nấu từ các loại mắm đặc sản như mắm cá sặc hoặc mắm cá linh, mang hương vị đậm đà, thơm nồng..</p>
+            <div class="card-region">📍 An Giang</div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image006.jpg?w=320&h=200&fit=crop&auto=format" alt="Cá kho tộ" />
+            <span class="card-badge">#02</span>
+            <span class="card-tag">Truyền thống</span>
+          </div>
+          <div class="card-body">
+            <h3>Cá Kho Tộ</h3>
+            <p>Các loại cá đồng hoặc cá da trơn (như cá lóc, cá basa, cá bông lau...) 
+              kho trong thố đất với nước màu dừa, tiêu và nước mắm đậm đà và béo ngậy.</p>
+            <div class="card-region">📍 Miền Tây nam bộ</div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image016.jpg?w=320&h=200&fit=crop&auto=format" alt="Bánh xèo miền Tây" />
+            <span class="card-badge">#03</span>
+            <span class="card-tag">Phổ biến</span>
+          </div>
+          <div class="card-body">
+            <h3>Bánh Xèo Miền Tây</h3>
+            <p>Bánh xèo to tròn, vỏ giòn và giòn rụm màu vàng nghệ, nhân tôm thịt giá đỗ, ăn kèm rau sống.</p>
+            <div class="card-region">📍 Cần Thơ</div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image005.jpg?w=320&h=200&fit=crop&auto=format" alt="Bún nước lèo" />
+            <span class="card-badge">#04</span>
+            <span class="card-tag">Đặc sản</span>
+          </div>
+          <div class="card-body">
+            <h3>Bún Nước Lèo</h3>
+            <p>biểu tượng ẩm thực giao thoa giữa ba dân tộc Kinh - Khmer - Hoa. Nước dùng có mùi thơm đặc trưng 
+              của ngải bún, sả và vị ngọt thanh từ cá cùng mắm bò hóc hoặc mắm cá linh.</p>
+            <div class="card-region">📍 Sóc Trăng</div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image017.jpg?w=320&h=200&fit=crop&auto=format" alt="Hủ tiếu Nam Vang" />
+            <span class="card-badge">#05</span>
+            <span class="card-tag">Nổi tiếng</span>
+          </div>
+          <div class="card-body">
+            <h3>Hủ Tiếu Nam Vang</h3>
+            <p>Giao thoa văn hóa ẩm thực giữa Campuchia, người Hoa và phong vị Việt.
+              Hủ tiếu dai, nước dùng trong vắt từ xương heo, tôm và trứng cút.</p>
+            <div class="card-region">📍 An Giang</div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image017.webp" alt="Cháo cá lóc" />
+            <span class="card-badge">#06</span>
+            <span class="card-tag">Ấm bụng</span>
+          </div>
+          <div class="card-body">
+            <h3>Cháo Cá Lóc</h3>
+            <p>gạo rang thơm hoặc gạo giã nhỏ kết hợp đậu xanh/đỗ tương bằm nhuyễn, 
+              ăn cùng thịt cá lóc đồng săn chắc, nấm rơm và không thể thiếu rau đắng đất tạo vị đắng thanh.</p>
+            <div class="card-region">📍 Đồng Tháp</div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image018.webp" alt="Cơm tấm" />
+            <span class="card-badge">#07</span>
+            <span class="card-tag">Quốc dân</span>
+          </div>
+          <div class="card-body">
+            <h3>Cơm Tấm Long Xuyên</h3>
+            <p>Đĩa cơm rưới ngập mỡ hành béo ngậy, ăn kèm đồ chua 
+              và chan loại nước mắm nấu sệt có vị ngọt đậm chất miền Tây.</p>
+            <div class="card-region">📍 Long Xuyên</div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image019.jpg?w=320&h=200&fit=crop&auto=format" alt="Gỏi cuốn" />
+            <span class="card-badge">#08</span>
+            <span class="card-tag">Thanh đạm</span>
+          </div>
+          <div class="card-body">
+            <h3>Gỏi Cuốn Tôm Thịt</h3>
+            <p>Gỏi cuốn tôm thịt là món ăn thanh mát, nổi tiếng với sự kết hợp 
+              hoàn hảo giữa tôm luộc đỏ au, thịt ba chỉ mềm ngọt và các loại rau sống tươi ngon.</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image020.webp?w=320&h=200&fit=crop&auto=format" alt="Lươn um lá cách" />
+            <span class="card-badge">#09</span>
+            <span class="card-tag">Dân dã</span>
+          </div>
+          <div class="card-body">
+            <h3>Lươn Um Lá Cách</h3>
+            <p>Thịt lươn đồng ngọt mềm kết hợp với vị béo ngậy của nước
+               cốt dừa và vị đắng nhẹ, thơm nồng đặc trưng của lá cách.</p>
+            <div class="card-region">📍 Vĩnh Long</div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image021.jpg?w=320&h=200&fit=crop&auto=format" alt="Cá lóc nướng trui" />
+            <span class="card-badge">#10</span>
+            <span class="card-tag">Đặc sắc</span>
+          </div>
+          <div class="card-body">
+            <h3>Cá Lóc Nướng Trui</h3>
+            <p>Cá lóc nướng nguyên con trên lửa rơm, lớp vảy cháy khét bên ngoài được cạo bỏ,
+               lộ ra phần thịt cá trắng ngần, thơm ngọt tự nhiên. ăn kèm bánh tráng và rau đồng.</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image022.webp?w=320&h=200&fit=crop&auto=format" alt="Ếch xào lăn" />
+            <span class="card-badge">#11</span>
+            <span class="card-tag">Độc đáo</span>
+          </div>
+          <div class="card-body">
+            <h3>Ếch Xào Lăn</h3>
+            <p>Đặc trưng của ếch xào lăn miền Tây là sử dụng thịt ếch đồng săn chắc, kết hợp với nước cốt dừa béo ngậy, sả, 
+              bột cà ri/hạt điều màu và nấm mèo, thường ăn kèm với bánh mì hoặc bún tươi.</p>
+            <div class="card-region">📍 Bến Tre - Trà Vinh</div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image023.jpg?w=320&h=200&fit=crop&auto=format" alt="Tôm càng xanh" />
+            <span class="card-badge">#12</span>
+            <span class="card-tag">Cao cấp</span>
+          </div>
+          <div class="card-body">
+            <h3>Tôm Càng Xanh Nướng</h3>
+            <p>Tôm tươi sống được nướng trực tiếp trên than hồng giúp giữ nguyên độ ngọt tự nhiên, 
+              thịt chắc và lớp gạch béo ngậy ở phần đầu.</p>
+            <div class="card-region">📍 Cà Mau - Bến Tre - Đồng Tháp</div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image024.webp?w=320&h=200&fit=crop&auto=format" alt="Vịt nấu chao" />
+            <span class="card-badge">#13</span>
+            <span class="card-tag">Đậm đà</span>
+          </div>
+          <div class="card-body">
+            <h3>Vịt Nấu Chao</h3>
+            <p>Nước dùng béo ngậy, thơm nức mùi chao và khoai môn bùi béo, ngọt thanh nhờ nước dừa tươi</p>
+            <div class="card-region">📍 Cần Thơ</div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image025.webp?w=320&h=200&fit=crop&auto=format" alt="Canh chua cá ba sa" />
+            <span class="card-badge">#14</span>
+            <span class="card-tag">Thanh mát</span>
+          </div>
+          <div class="card-body">
+            <h3>Canh Chua Cá Ba Sa</h3>
+            <p>Vị chua thanh từ me chua hoặc lá giang, kết hợp với vị béo ngậy tự nhiên từ phần mỡ bụng cá ba sa.</p>
+            <div class="card-region">📍 Đồng Tháp</div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image026.webp?w=320&h=200&fit=crop&auto=format" alt="Mắm chưng thịt" />
+            <span class="card-badge">#15</span>
+            <span class="card-tag">Truyền thống</span>
+          </div>
+          <div class="card-body">
+            <h3>Mắm Chưng Thịt</h3>
+            <p>ậm đà, vị mặn mòi đặc trưng của mắm hòa quyện với vị béo của thịt và trứng, 
+              ăn kèm rau sống, dưa leo, chuối chát và cơm trắng.</p>
+            <div class="card-region">📍 Châu Đốc An Giang</div>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image027.jpeg?w=320&h=200&fit=crop&auto=format" alt="Bún thịt nướng" />
+            <span class="card-badge">#16</span>
+            <span class="card-tag">Phổ biến</span>
+          </div>
+          <div class="card-body">
+            <h3>Bún Thịt Nướng</h3>
+            <p>Bún trắng mềm, thịt nướng than hồng thơm, rau sống và nước mắm chua ngọt.</p>
+            <div class="card-region">📍 Đồng Bằng SCL</div>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image028.png?w=320&h=200&fit=crop&auto=format" alt="Cơm cháy kho quẹt" />
+            <span class="card-badge">#17</span>
+            <span class="card-tag">Phổ biến</span>
+          </div>
+          <div class="card-body">
+            <h3>Cơm cháy kho quẹt</h3>
+            <p>Cơm cháy ép mỏng và chiên giòn từ cơm nguội cùng với kho quẹt sền sệt, 
+              đậm đà vị mặn ngọt và đặc biệt thêm tóp mỡ béo ngậy cùng tôm khô</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image029.png?w=320&h=200&fit=crop&auto=format" alt="Cơm cháy khô" />
+            <span class="card-badge">#18</span>
+            <span class="card-tag">Hoài niệm</span>
+          </div>
+          <div class="card-body">
+            <h3>Bánh Tằm Cay</h3>
+            <p>Sợi bánh tằm to mập, nước sốt cà ri sền sệt, cay nồng kết hợp thơm mùi hoa hồi, quế và đinh hương, 
+              với thịt gà, xíu mại to mềm, trứng gà non, tàu hũ ky và rau sống tươi.</p>
+            <div class="card-region">📍 Cà Mau</div>
+          </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image030.jpg?w=320&h=200&fit=crop&auto=format" alt="Bò nướng lá lốt" />
+            <span class="card-badge">#19</span>
+            <span class="card-tag">Phổ biến</span>
+          </div>
+          <div class="card-body">
+            <h3>Lẩu Cù Lao</h3>
+            <p>Xuất hiện trong các dịp đám giỗ, tiệc cưới. Nước lẩu trong, vị ngọt đậm đà, thanh mát và không bị béo ngấy.</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="card card-dark">
+          <div class="card-img">
+            <img src="image/image031.jpg?w=320&h=200&fit=crop&auto=format" alt="Gà nấu tiêu Phú Quốc" />
+            <span class="card-badge">#20</span>
+            <span class="card-tag">Đặc sản</span>
+          </div>
+          <div class="card-body">
+            <h3>Hủ tiếu Sa Đéc</h3>
+            <p>Sợi hủ tiếu mềm dai vừa phải, nước dùng thanh ngọt từ xương kết hợp nước sốt đặc trưng chuẩn vị Đồng Tháp</p>
+            <div class="card-region">📍 Sa Đéc - Đồng Tháp</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CÁC LOẠI BÁNH ─────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label"><span>Đặc sản dân gian</span></div>
+        <h2>Các Loại đặc sản Miền Tây</h2>
+        <p>Bánh đặc sản các loại ở miền Tây mang hương vị dân dã, chế biến từ gạo, nếp, dừa và đậu xanh qua bàn tay khéo léo.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/image032.jpg?w=400&h=220&fit=crop&auto=format" alt="Bánh pía" />
+          </div>
+          <div class="card-body">
+            <h3>Bánh Pía Sóc Trăng</h3>
+            <p>Vỏ mỏng nhiều lớp, nhân đậu xanh mỡ và sầu riêng thơm béo — đặc sản nức tiếng Sóc Trăng.</p>
+            <div class="card-region">📍 Sóc Trăng</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/image033.jpeg?w=400&h=220&fit=crop&auto=format" alt="Bánh tét lá cẩm" />
+          </div>
+          <div class="card-body">
+            <h3>Bánh Tét Lá Cẩm</h3>
+            <p>Vỏ màu tím lá cẩm đẹp mắt, nhân đậu xanh và thịt mỡ hài hòa, phổ biến dịp Tết.</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/image034.jpg?w=400&h=220&fit=crop&auto=format" alt="Bánh da lợn" />
+          </div>
+          <div class="card-body">
+            <h3>Bánh Da Lợn</h3>
+            <p>Nhiều lớp xanh trong suốt từ bột nếp và lá dứa, dẻo mềm ngọt nhẹ, thanh mát.</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/image035.jpg?w=400&h=220&fit=crop&auto=format" alt="Bánh cống" />
+          </div>
+          <div class="card-body">
+            <h3>Bánh Cống Sóc Trăng</h3>
+            <p>Chiên giòn từ bột gạo, nhân tôm đậu xanh thịt xay, ăn kèm rau sống và nước mắm.</p>
+            <div class="card-region">📍 Sóc Trăng</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/image036.webp?w=400&h=220&fit=crop&auto=format" alt="Bánh tằm bì" />
+          </div>
+          <div class="card-body">
+            <h3>Bánh Tằm Bì</h3>
+            <p>Sợi bột gạo dẻo dai ăn cùng bì heo sợi, nước cốt dừa béo ngậy và đồ chua.</p>
+            <div class="card-region">📍 Cần Thơ</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/image037.webp?w=400&h=220&fit=crop&auto=format" alt="Bánh ít trần" />
+          </div>
+          <div class="card-body">
+            <h3>Bánh Ít Trần</h3>
+            <p>Bánh nếp tròn mềm nhân đậu xanh dừa nạo, không lá gói, giữ nguyên độ dẻo thơm.</p>
+            <div class="card-region">📍 Đồng bằng SCL</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">Â</div>
+            <div class="logo-text" style="color:#fff;">
+              Ẩm Thực Miền Tây
+              <span style="color:rgba(255,255,255,.5);">Nam Bộ · Việt Nam</span>
+            </div>
+          </a>
+          <p>Cổng thông tin du lịch và ẩm thực miền Tây Nam Bộ.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Khám Phá</h4>
+          <ul>
+            <li><a href="products.html">20 Món đặc sản</a></li>
+            <li><a href="products.html">Các loại bánh</a></li>
+            <li><a href="about.html">Giới thiệu vùng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div><strong>Địa chỉ</strong><span>Trần Văn Thời, TP. Cà Mau</span></div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📧</span>
+            <div><strong>Email</strong><span>duongquochy2019@gmail.com</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ẩm Thực Miền Tây.</span>
+        <span>Thiết kế với <span class="heart">♥</span> Dương Quốc Hy</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
