@@ -623,7 +623,8 @@ footer {
   .about-imgs   { height: 260px; }
   .form-row     { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
-  .hero { height: 420px; }
+  .hero { min-height: 520px; height: auto; }
+  .hero-content { padding-top: 2rem; padding-bottom: 2rem; }
   section { padding: 2.75rem 0; }
 }
 
@@ -631,6 +632,6 @@ footer {
   .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .stats  { grid-template-columns: repeat(3, 1fr); gap: .6rem; }
-  .hero { height: 360px; }
+  .hero { min-height: 540px; }
   .card-img { height: 140px; }
 }
